@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #dbdbdb;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.webpage {
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.synthBody {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+
+    font-size: 2em;
+}
+
+.key {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    background-color: white;
+    height: 80%;
+    border-left: solid 0.05em #dbdbdb;
+    border-right: solid 0.05em #dbdbdb;
+    color: #bebebe;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    background-color: #383838;
+    color: white;
+}
+
+#C {
+    border-bottom-left-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+}
+#Cx {
+    border-bottom-right-radius: 0.75em;
+    border-top-right-radius: 0.75em;
+}
+
+
+
+.key:active {
+    background-color: #ededed;
+    color: black;
+}
+.black:active {
+    background-color: #5f5f5f;
+    color: #e0e0e0;
+}
