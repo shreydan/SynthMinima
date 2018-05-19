@@ -73,11 +73,11 @@ body,html {
     color: white;
 }
 
-#C {
+.C {
     border-bottom-left-radius: 0.75em;
     border-top-left-radius: 0.75em;
 }
-#Cx {
+.Cx {
     border-bottom-right-radius: 0.75em;
     border-top-right-radius: 0.75em;
 }

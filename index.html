@@ -6,7 +6,7 @@
         <title>Synth Minima</title>
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-		<link rel="shortcut icon" href="#" /> 
+		<link rel="shortcut icon" href="src/SynthMinima.ico" /> 
     </head>
     
     <body>
@@ -14,26 +14,56 @@
         <div class="webpage">
             
             <div id="header"> - Synth Minima - </div>
+            
             <div class="synthBody">  
-                <!-- NOTES: C C# D Eb E F F# G Ab A Bb B Cx -->
-                <!-- Tabbed divs are black keys, rest are white; -->
                 
-                <div class="key" id="C" >C</div>
-                    <div class="key black" id="Csharp" >C#</div>
-                <div class="key" id="D" >D</div>
-                    <div class="key black" id="Eflat" >Eb</div>
-                <div class="key" id="E" >E</div>
-                <div class="key" id="F" >F</div>
-                    <div class="key black" id="Fsharp" >F#</div>
-                <div class="key" id="G" >G</div>
-                    <div class="key black" id="Aflat" >Ab</div>
-                <div class="key" id="A" >A</div>
-                    <div class="key black" id="Bflat" >Bb</div>
-                <div class="key" id="B" >B</div>
-                <div class="key" id="Cx" >C</div>
+                <!-- NOTES: C C# D Eb E F F# G Ab A Bb B Cx -->
+                
+                <div class="key C" id="key-81">C</div>
+                <div class="key Csharp black" id="key-87">C#</div>
+                <div class="key D" id="key-69">D</div>
+                <div class="key Eflat black" id="key-82">Eb</div>
+                <div class="key E" id="key-84">E</div>
+                <div class="key F" id="key-89">F</div>                
+                <div class="key Fsharp black" id="key-85">F#</div>                
+                <div class="key G" id="key-73">G</div>                
+                <div class="key Aflat black" id="key-79">Ab</div>               
+                <div class="key A" id="key-80">A</div>
+                <div class="key Bflat black" id="key-219">Bb</div>
+                <div class="key B" id="key-221">B</div>
+                <div class="key Cx" id="key-220">C</div>
+                
             </div>
             
         </div>
+        
+        <!-- Audio tags - most import part of the app - HTML5 -->
+        <audio id="key-81" loop preload="auto"><source src="src/sawtooth/C5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-87" loop preload="auto"><source src="src/sawtooth/Csharp5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-69" loop preload="auto"><source src="src/sawtooth/D5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-82" loop preload="auto"><source src="src/sawtooth/Eflat5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-84" loop preload="auto"><source src="src/sawtooth/E5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-89" loop preload="auto"><source src="src/sawtooth/F5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-85" loop preload="auto"><source src="src/sawtooth/Fsharp5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-73" loop preload="auto"><source src="src/sawtooth/G5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-79" loop preload="auto"><source src="src/sawtooth/Aflat5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-80" loop preload="auto"><source src="src/sawtooth/A5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-219" loop preload="auto"><source src="src/sawtooth/Bflat5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-221" loop preload="auto"><source src="src/sawtooth/B5.mp3" type="audio/mpeg"></audio>
+        
+        <audio id="key-220" loop preload="auto"><source src="src/sawtooth/C6.mp3" type="audio/mpeg"></audio>
+        
                 <script src="synth.js"></script>
     </body>
     
