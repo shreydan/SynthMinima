@@ -1,7 +1,7 @@
 function playNote(e) {
     
     keyCode = e.keyCode;
-    keyCode = 'key-'.concat(parseInt(keyCode));
+    keyCode = 'key_'.concat(parseInt(keyCode));
     const note = document.getElementById(keyCode);
     var key = document.getElementsByClassName(keyCode)[0];
     key.classList.add("pressed");
@@ -16,7 +16,7 @@ function playNote(e) {
 function stopNote(e) {
     
     keyCode = e.keyCode;
-    keyCode = 'key-'.concat(parseInt(keyCode));
+    keyCode = 'key_'.concat(parseInt(keyCode));
     const note = document.getElementById(keyCode);
     var key = document.getElementsByClassName(keyCode)[0];
     key.classList.remove("pressed");
